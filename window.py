@@ -13,7 +13,7 @@ class App(tk.Tk):
 
     # label
     self.label = ttk.Label(self, text='Hello, Tkinter!')
-    self.label.pack()
+    self.label.place(relx=.5, rely=.1, anchor="c")
 
     # button
     self.button = ttk.Button(self, text='Click Me')
