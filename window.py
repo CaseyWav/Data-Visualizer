@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import filedialog
 from tkinter.messagebox import showinfo
 
 
@@ -24,8 +25,24 @@ class App(tk.Tk):
     exit_button = ttk.Button(self, text="X", command=self.destroy)
     exit_button.place(relx=.982, rely=0.01, anchor="c")
 
+    
+    
+    label_file_explorer = ttk.Label(self, text = "File Explorer using Tkinter")
+    label_file_explorer.place(relx=.75,rely=.05, anchor="c")
+    button_explore = ttk.Button(self, text = "Browse Files", command = self.browseFiles())
+    
+    
+
   def button_clicked(self):
     showinfo(title='Information', message='Hello, Tkinter!')
+
+  def browseFiles(label_file_explorer):
+    filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File", filetypes = (("Text files","*.txt*"),("all files","*.*")))
+      
+    # Change label contents
+    label_file_explorer.configure(text="File Opened: "+filename)
+    
+
 
 if __name__ == "__main__":
   app = App()
