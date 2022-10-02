@@ -29,7 +29,11 @@ class App(tk.Tk):
     button_explore = ttk.Button(self, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
     button_explore.place(relx=.75,rely=.07, anchor="c")
+
+    clicked = self.StringVar()
+    clicked.set("Select a data analysis method...")
     
+    data_analysis_ddl = self.OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
 
   def button_clicked(self):
     showinfo(title='Information', message='Hello, Tkinter!')
@@ -39,6 +43,8 @@ class App(tk.Tk):
       
     # Change label contents
     label_file_explorer.configure(text="File Opened: "+filename)
+
+  
     
 
 if __name__ == "__main__":
