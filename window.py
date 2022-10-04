@@ -1,7 +1,8 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import *
+from tkinter import OptionMenu, ttk
 from tkinter import filedialog
-import data_analysis_ddl
+from data_analysis_ddl import analysis_options
 from tkinter.messagebox import showinfo
 
 class App(tk.Tk):
@@ -29,14 +30,16 @@ class App(tk.Tk):
     button_explore = ttk.Button(self, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
     button_explore.place(relx=.75,rely=.07, anchor="c")
-
-    clicked = self.StringVar()
-    clicked.set("Select a data analysis method...")
     
-    data_analysis_ddl = self.OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
+    clicked = StringVar()
+    
+    self.createAnalysisOptionsDDL(self)
 
   def button_clicked(self):
     showinfo(title='Information', message='Hello, Tkinter!')
+
+  def createAnalysisOptionsDDL(self):
+    data_analysis_ddl = OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
 
   def browseFiles(self, label_file_explorer):
     filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File", filetypes = (("Text files","*.txt*"),("all files","*.*")))
@@ -45,8 +48,6 @@ class App(tk.Tk):
     label_file_explorer.configure(text="File Opened: "+filename)
 
   
-    
-
 if __name__ == "__main__":
   app = App()
   app.mainloop()
