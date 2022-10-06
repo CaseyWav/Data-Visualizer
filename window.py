@@ -31,15 +31,15 @@ class App(tk.Tk):
     
     button_explore.place(relx=.75,rely=.07, anchor="c")
     
-    clicked = StringVar()
+    clicked = StringVar(self)
+    clicked.set("Select an analysis option")
+    data_analysis_ddl = OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
     
-    self.createAnalysisOptionsDDL(self)
+    data_analysis_ddl.pack()
 
   def button_clicked(self):
     showinfo(title='Information', message='Hello, Tkinter!')
-
-  def createAnalysisOptionsDDL(self):
-    data_analysis_ddl = OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
+    
 
   def browseFiles(self, label_file_explorer):
     filename = filedialog.askopenfilename(initialdir = "/", title = "Select a File", filetypes = (("Text files","*.txt*"),("all files","*.*")))
