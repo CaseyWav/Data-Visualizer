@@ -17,25 +17,24 @@ class App(tk.Tk):
 
     # label
     self.label = ttk.Label(self, text='Hello, Tkinter!')
-    self.label.place(relx=.5, rely=.1, anchor="c")
+    self.label.grid(row=0,column=0,columnspan=5)
 
     # button
     self.button = ttk.Button(self, text='Click Me')
     self.button['command'] = self.button_clicked
-    self.button.pack()
-
+    self.button.grid(row=1,column=3,ipadx=.5,ipady=.5)
     label_file_explorer = ttk.Label(self, text = "File Explorer using Tkinter")
     label_file_explorer.place(relx=.75,rely=.05, anchor="c")
     self.button['command'] = self.button_clicked
     button_explore = ttk.Button(self, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
-    button_explore.place(relx=.75,rely=.07, anchor="c")
+    button_explore.grid(row=3,column=4)
     
     clicked = StringVar(self)
     clicked.set("Select an analysis option")
     data_analysis_ddl = OptionMenu(self, clicked, *analysis_options)
     
-    data_analysis_ddl.pack()
+    data_analysis_ddl.grid(row=4,column=5)
 
   def button_clicked(self):
     showinfo(title='Information', message='Hello, Tkinter!')
