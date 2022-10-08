@@ -33,7 +33,7 @@ class App(tk.Tk):
     
     clicked = StringVar(self)
     clicked.set("Select an analysis option")
-    data_analysis_ddl = OptionMenu(self, clicked, data_analysis_ddl.analysis_options)
+    data_analysis_ddl = OptionMenu(self, clicked, values=analysis_options)
     
     data_analysis_ddl.pack()
 
