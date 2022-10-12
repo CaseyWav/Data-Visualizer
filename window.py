@@ -27,12 +27,12 @@ class App(tk.Tk):
     self.button = ttk.Button(self, text='Click Me')
     self.button['command'] = self.button_clicked
     self.button.place(relx=.8,rely=.2)
-    label_file_explorer = ttk.Label(self, text = "File Explorer using Tkinter")
-    label_file_explorer.place(relx=.75,rely=.05, anchor="c")
-    self.button['command'] = self.button_clicked
-    button_explore = ttk.Button(self, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
+    label_file_explorer = ttk.Label(frame1, text = "File Explorer using Tkinter")
+    label_file_explorer.pack()
+    #self.button['command'] = self.button_clicked
+    button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
-    button_explore.place(relx=.75,rely=.1)
+    button_explore.pack()
     
     clicked = StringVar(self)
     clicked.set("Select an analysis option")
