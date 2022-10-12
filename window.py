@@ -16,8 +16,8 @@ class App(tk.Tk):
     screen_height = self.winfo_screenheight()
     self.geometry("%dx%d" % (screen_width, screen_height))
 
-    frame1 = tk.Frame(self,width=(screen_width*.5),height=(screen_height*.5),bg="blue")
-    frame1.place(relx=.5,rely=.5)
+    frame1 = tk.Frame(self,width=(screen_width*.5),height=(screen_height*.5),bg="blue",highlightbackground="black", highlightthickness=2)
+    frame1.place(relx=.75,rely=.2)
 
     # label
     self.label = ttk.Label(self, text='Hello, Tkinter!')
@@ -26,7 +26,7 @@ class App(tk.Tk):
     # button
     self.button = ttk.Button(self, text='Click Me')
     self.button['command'] = self.button_clicked
-    self.button.place(relx=.8,rely=.2)
+    self.button.place(relx=.5,rely=.2)
     label_file_explorer = ttk.Label(frame1, text = "File Explorer using Tkinter")
     label_file_explorer.pack()
     #self.button['command'] = self.button_clicked
