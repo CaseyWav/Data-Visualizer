@@ -1,4 +1,5 @@
 import tkinter as tk
+import csv
 from tkinter import *
 from tkinter import OptionMenu, ttk
 from tkinter import filedialog
@@ -16,7 +17,7 @@ class App(tk.Tk):
     screen_height = self.winfo_screenheight()
     self.geometry("%dx%d" % (screen_width, screen_height))
 
-    frame1 = tk.Frame(self,width=(screen_width*.5),height=(screen_height*.5),bg="blue",highlightbackground="black", highlightthickness=2)
+    frame1 = tk.Frame(self,width=(screen_width),height=(screen_height),bg="blue",highlightbackground="black", highlightthickness=2)
     frame1.place(relx=.75,rely=.2)
 
     # label
@@ -49,6 +50,12 @@ class App(tk.Tk):
       
     # Change label contents
     label_file_explorer.configure(text="File Opened: "+filename)
+
+  def readFile(filename):
+    f = open(filename, encoding='UTF8')
+
+
+    f.close()
 
   
 if __name__ == "__main__":
