@@ -1,5 +1,7 @@
 import tkinter as tk
 import csv
+from matplotlib import pyplot as plt
+import numpy as np
 from tkinter import *
 from tkinter import OptionMenu, ttk
 from tkinter import filedialog
@@ -33,7 +35,9 @@ class App(tk.Tk):
     #self.button['command'] = self.button_clicked
     button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
-    button_explore.pack()
+    if file_name is not None:
+      button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.readFile))
+      button_process_data.pack()
     
     clicked = StringVar(self)
     clicked.set("Select an analysis option")
@@ -53,7 +57,22 @@ class App(tk.Tk):
 
   def readFile(filename):
     f = open(filename, encoding='UTF8')
-
+    d13c = []
+    d15n = []
+  
+    with open(filename,'r') as csvfile:
+        lines = csv.reader(csvfile, delimiter=',')
+        for row in lines:
+            d13c.append(row[0])
+            d15n.append(int(row[1]))
+  
+    plt.scatter(d13c, d15n, color = 'g',s = 100)
+    plt.xticks(rotation = 25)
+    plt.xlabel('Carbon')
+    plt.ylabel('Nitrogen')
+    plt.title('Food chart', fontsize = 20)
+  
+    plt.show()
 
     f.close()
 
