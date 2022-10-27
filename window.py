@@ -36,7 +36,7 @@ class App(tk.Tk):
     button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
     if file_name is not None:
-      button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.readFile))
+      button_process_data = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.readFile))
       button_process_data.pack()
     
     clicked = StringVar(self)
