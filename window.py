@@ -35,7 +35,7 @@ class App(tk.Tk):
     #self.button['command'] = self.button_clicked
     button_explore = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.browseFiles(label_file_explorer)))
     
-    if file_name is not None:
+    if self.file_name is not None:
       button_process_data = ttk.Button(frame1, text = "Browse Files", command = (lambda: self.readFile))
       button_process_data.pack()
     
@@ -45,13 +45,13 @@ class App(tk.Tk):
     
     data_analysis_ddl.grid(row=4,column=5)
 
-  def button_clicked(self):
+  def button_clicked(self): 
     showinfo(title='Information', message='Hello, Tkinter!')
     
 
   def browseFiles(self, label_file_explorer):
     filename = filedialog.askopenfilename()
-      
+    self.filename.set()
     # Change label contents
     label_file_explorer.configure(text="File Opened: "+filename)
 
