@@ -1,0 +1,213 @@
+﻿type,specifics,d13C,d15N
+C4 plant,,-11,7.2
+C3 plant,,-22.2,4.5
+C3 plant,,-23.1,2.3
+C3 plant,,-25,1.1
+C3 plant,,-25.3,9.6
+C3 plant,,-25.5,7.4
+C3 plant,,-26.5,2.2
+C3 plant,,-26.5,-0.3
+C3 plant,,-26.8,2.5
+C3 plant,,-27.4,0.3
+C4 plant,,-12,-1.6
+C3 plant,,-22.2,0.8
+C3 plant,,-22.8,2
+C3 plant,,-24.4,-0.5
+C3 plant,,-24.4,7.9
+C3 plant,,-24.7,-1
+C3 plant,,-24.9,2.2
+C3 plant,,-25,-2.6
+C3 plant,,-25,-0.2
+C3 plant,,-25.6,2.3
+C3 plant,,-25.7,6.1
+C3 plant,,-26.5,6
+C3 plant,,-26.6,-3.5
+C3 plant,,-26.9,1.3
+C3 plant,,-27.1,2.9
+C3 plant,,-27.3,3.8
+C3 plant,,-27.3,2.2
+C3 plant,,-27.4,5.3
+C3 plant,,-27.4,1.4
+C3 plant,,-27.5,2
+C3 plant,,-28.1,3.8
+C3 plant,,-19,-6.5
+C3 plant,,-23.1,4.2
+C3 plant,,-23.6,0.9
+C3 plant,,-23.8,4.4
+C3 plant,,-23.8,6.3
+C3 plant,,-24,11.9
+C3 plant,,-24.4,2.1
+C3 plant,,-24.5,-0.5
+C3 plant,,-24.7,1.3
+C3 plant,,-24.8,-1.8
+C3 plant,,-25.1,7.3
+C3 plant,,-25.4,-5.2
+C3 plant,,-26.2,-1.4
+C3 plant,,-26.9,0.6
+C3 plant,,-27.9,6.2
+maize,maize,-10.8,10.3
+maize,maize,-10.9,9.3
+maize,maize,-10.4,6.8
+maize,maize,-10.5,4.8
+maize,maize,-10.5,10.3
+maize,maize,-10.6,4.4
+maize,maize,-10.3,5
+maize,maize,-10.3,6.1
+maize,maize,-10.6,7
+maize,maize,-10.1,7.6
+maize,maize,-10.2,4
+maize,maize,-10.3,5
+maize,maize,-10,5.4
+maize,maize,-10.1,7.3
+maize,maize,-10.1,7.8
+maize,maize,-9.8,5.5
+maize,maize,-9.8,3.8
+maize,maize,-10.2,7.4
+maize,maize,-10.6,4.9
+maize,maize,-10.5,3
+maize,maize,-10.1,6.6
+maize,maize,-9.5,3.5
+maize,maize,-10.4,4.8
+maize,maize,-10.6,11.1
+maize,maize,-9.6,9.9
+maize,maize,-10.5,5.6
+maize,maize,-10.6,4.8
+camelid,vicuna,-21.4,4.4
+camelid,vicuna,-19.9,3.5
+camelid,vicuna,-21,6.1
+camelid,vicuna,-20.6,5.1
+camelid,vicuna,-20.6,5.4
+camelid,vicuna,-20.4,4.5
+camelid,vicuna,-19.9,5.6
+camelid,vicuna,-19,6.2
+camelid,vicuna,-19.7,6
+camelid,vicuna,-19.2,5.5
+camelid,vicuna,-20.8,4.3
+camelid,vicuna,-18.5,7
+camelid,vicuna,-20.3,3.4
+camelid,vicuna,-19.9,6.9
+camelid,vicuna,-20.2,4.5
+camelid,vicuna,-17.8,7.4
+camelid,vicuna,-16.6,6.6
+camelid,vicuna,-18,7.1
+camelid,vicuna,-20.9,5.4
+camelid,vicuna,-21.4,5.7
+camelid,vicuna,-21,7
+camelid,vicuna,-21.1,5.7
+camelid,vicuna,-20.6,5.1
+camelid,vicuna,-22.1,4.7
+camelid,vicuna,-20.3,6.5
+camelid,vicuna,-20.9,4.9
+camelid,vicuna,-21.4,5.4
+camelid,vicuna,-20.4,5.4
+freshwater fish,,-10.42,7.05
+freshwater fish,,-12.19,7.29
+freshwater fish,,-10.21,5.39
+freshwater fish,,-13.25,5.88
+freshwater fish,,-14.95,7.43
+freshwater fish,,-20.87,5.81
+freshwater fish,,-13.78,7.66
+freshwater fish,,-9.8,12.82
+freshwater fish,,-13.34,6.72
+freshwater fish,,-15.14,5.05
+camelid,taruca,-22.3,5.3
+camelid,taruca,-20.7,5.3
+camelid,taruca,-23,2.2
+camelid,taruca,-22.6,6.1
+camelid,taruca,-21,4.5
+camelid,taruca,-21.48,7.52
+camelid,taruca,-22.31,5.71
+camelid,taruca,-15.57,4.32
+camelid,taruca,-22.07,3.98
+camelid,taruca,-20.78,5.62
+camelid,taruca,-22.44,5.58
+camelid,taruca,-22.27,5.44
+camelid,taruca,-23.27,4.38
+camelid,taruca,-23.57,4.47
+C4 plant,,-8.1,-3
+C4 plant,,-11.4,-4.7
+C4 plant,,-9.2,-0.7
+C4 plant,,-10.1,2.2
+C4 plant,,-9,9
+C4 plant,,-9.6,7.6
+C4 plant,,-12.1,10.3
+C4 plant,,-9.6,6.8
+C4 plant,,-9.9,1.3
+C4 plant,,-10.4,-0.7
+C4 plant,,-10.5,1
+C4 plant,,-10.7,15.8
+C4 plant,,-10.9,11.8
+C4 plant,,-9.8,4.1
+C4 plant,,-9.8,4.2
+C4 plant,,-22.8,11
+C3 plant,,-22.5,9.4
+C3 plant,,-23.5,12.9
+C3 plant,quinoa,-22.6,8.8
+C3 plant,tuber,-21.8,9.7
+C4 plant,,-26.8,7.2
+C3 plant,,-24.3,3.2
+C3 plant,,-24.4,-3
+C3 plant,,-25.2,-1.9
+C3 plant,,-27.7,-1.1
+C3 plant,,-27.5,-4.1
+C3 plant,,-23.2,-1.4
+C3 plant,,-24.9,6.4
+C3 plant,,-25.2,7.3
+C3 plant,,-25.9,8.9
+C3 plant,quinoa,-22.8,5.7
+C3 plant,,-22.4,7.7
+C3 plant,quinoa,-22.9,7.2
+C3 plant,quinoa,-21.4,8.1
+C3 plant,,-24.9,-4.3
+C3 plant,,-24.5,15.2
+C3 plant,,-22.4,5.8
+C3 plant,,-24.5,0.4
+C3 plant,,-26.3,0.3
+C3 plant,,-25.5,4.5
+C3 plant,,-25.3,8
+C3 plant,,-24.6,-3.2
+C3 plant,,-25,-2
+C3 plant,,-23.6,-1.3
+C3 plant,,-24,-4.6
+C3 plant,,-26.7,1.4
+C3 plant,oca,-25.9,-0.4
+C3 plant,oca,-24.4,10.3
+C3 plant,oca,-24,9.8
+C3 plant,,-25.6,6.7
+C3 plant,,-24.5,4.8
+C4 plant,,-10,-3.4
+maize,maize,-9.6,5.1
+maize,maize,-9.9,8.9
+C3 plant,,-24.2,-2.2
+C3 plant,tuber,-26,8.7
+C3 plant,tuber,-23.2,7.2
+C3 plant,tuber,-26.4,6.8
+C3 plant,tuber,-24,6
+C3 plant,tuber,-25.1,7.3
+C3 plant,tuber,-26.4,8.6
+C3 plant,oca,-23,7.1
+C3 plant,oca,-23.6,NA
+C3 plant,oca,-22.5,11.9
+C3 plant,,-22.9,7.8
+C3 plant,,-24.3,8.5
+C3 plant,tuber,-25.5,7.3
+C3 plant,tuber,-25.6,9.3
+C3 plant,tuber,-24.5,NA
+C3 plant,tuber,-25.3,7
+C3 plant,,-23.5,0.5
+camelid,llama,-19.5,7.9
+camelid,llama,-21.7,7.3
+camelid,llama,-19.7,7.6
+camelid,llama,-19.4,6.4
+camelid,llama,-21.4,4.1
+camelid,llama,-20.4,5.1
+camelid,llama,-18.6,-17.9
+camelid,llama,-20.3,4.9
+camelid,llama,-18.7,6.2
+camelid,llama,-19.6,6.1
+camelid,llama,-19.7,6.5
+camelid,llama,-20.9,4.9
+camelid,llama,-15.5,7.6
+camelid,llama,-14,7.1
+camelid,llama,-19.5,6.7
+camelid,llama,-16.1,5.4
