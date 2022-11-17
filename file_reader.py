@@ -1,20 +1,19 @@
 import matplotlib.pyplot as plt
 import csv
+import pandas as pd
   
 
-d13c = []
-d15n = []
+data = pd.read_csv('Data-Visualizer/baselinedata_corrections.csv')
+type = data['type']
+specifics = data['specifics']
+d13c = data['d13C']
+d15n = data['d15N']
+
+plt.scatter(d13c,d15n, edgecolor='black', linewidth=1, alpha=0.75)
   
-with open('Data-Visualizer/baselinedata_corrections.csv','r') as csvfile:
-    lines = csv.reader(csvfile, delimiter=',')
-    for row in lines:
-        d13c.append(row[0])
-        d15n.append(row[1])
-  
-plt.scatter(d13c, d15n, color = 'g',s = 100)
-plt.xticks(rotation = 25)
 plt.xlabel('Carbon')
 plt.ylabel('Nitrogen')
-plt.title('Food chart', fontsize = 20)
+plt.title('Food chart')
   
+plt.tight_layout()
 plt.show()
