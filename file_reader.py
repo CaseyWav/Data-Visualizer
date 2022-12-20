@@ -3,7 +3,7 @@ import csv
 import pandas as pd
   
 
-data = pd.read_csv('Data-Visualizer/baselinedata_corrections.csv')
+data = pd.read_csv('')
 type = data['type']
 specifics = data['specifics']
 d13c = data['d13C']
