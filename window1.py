@@ -35,11 +35,18 @@ open_button.pack(padx=10, pady=10)
 
 # Dropdown list for statistical analysis methods
 analysis_methods = tk.StringVar()
-methods = ['Method 1', 'Method 2', 'Method 3']  # Replace with your methods
+methods = ['Graph', 'Statistics', 'Method 3']  # Replace with your methods
 analysis_methods.set(methods[0])  # Set default method
 
 method_dropdown = tk.OptionMenu(frame, analysis_methods, *methods)
 method_dropdown.pack(padx=10, pady=10)
+
+if analysis_methods.get == 'Statistics':
+    statistical_methods = tk.StringVar()
+    stat_methods = ['Mean','Median','Max','Min']
+    statistical_methods.set(stat_methods[0])
+    stat_method_dropdown = tk.OptionMenu(frame, statistical_methods, *stat_methods)
+    stat_method_dropdown.pack(padx=10, pady=60)
 
 # Button to perform analysis
 analyze_button = tk.Button(frame, text="Perform Analysis", command=perform_analysis)
