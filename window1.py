@@ -2,6 +2,7 @@ import tkinter as tk
 from data_reader1 import read_file
 from data_analysis_ddl import *
 from tkinter import filedialog
+from tkinter import Label
 
 
 # Create the main window
@@ -13,6 +14,15 @@ root.resizable(True, True)
 frame = tk.Frame(root)
 frame.pack(padx=20, pady=40)
 
+def open_file():
+    file_path = filedialog.askopenfilename()
+    # Do something with the selected file_path, like printing it
+    label = Label(root, text=file_path)
+    label.pack()
+
+# Button to open files
+open_button = tk.Button(frame, text="Open File", command=open_file)
+open_button.pack(padx=10, pady=10)
 
 # Dropdown list for statistical analysis methods
 analysis_methods = tk.StringVar()
@@ -27,15 +37,14 @@ statistical_methods.set(stat_methods[0])
 stat_method_dropdown = tk.OptionMenu(frame, statistical_methods, *stat_methods)
 
 
-def open_file():
-    file_path = filedialog.askopenfilename()
-    # Do something with the selected file_path, like printing it
-    print("Selected file:", file_path)
+
 
 def perform_analysis():
     selected_method = analysis_methods.get()
     # Do something with the selected_method, like printing it
     print("Selected method:", selected_method)
+
+
 
 # Button to perform analysis
 analyze_button = tk.Button(frame, text="Perform Analysis", command=perform_analysis)
@@ -45,9 +54,7 @@ def analysis_method_selector(*args):
     if analysis_methods.get() == 'Statistics' and not stat_method_dropdown.winfo_ismapped:
         stat_method_dropdown.pack(padx=10, pady=60)
 
-# Button to open files
-open_button = tk.Button(frame, text="Open File", command=open_file)
-open_button.pack(padx=10, pady=10)
+
 
 analysis_methods.trace_add("write", analysis_method_selector)
 
