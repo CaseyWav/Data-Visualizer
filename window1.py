@@ -3,6 +3,7 @@ from data_reader1 import read_file
 from data_analysis_ddl import *
 from tkinter import filedialog
 from tkinter import Label
+from tkinter import Canvas
 
 
 # Create the main window
@@ -13,7 +14,8 @@ root.resizable(True, True)
 # Create a frame to hold widgets
 frame = tk.Frame(root)
 frame.pack(padx=20, pady=40)
-
+canvas = Canvas(root, bg="grey", height=250, width=300)
+canvas.pack()
 def open_file():
     file_path = filedialog.askopenfilename()
     # Do something with the selected file_path, like printing it
